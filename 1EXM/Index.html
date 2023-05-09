@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="Stile.css">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../Menu/Index.html">
+            <img src="../IMG/YOP.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Practicas CSS Y JS
+          </a>
+        </div>
+      </nav>
+      <center>
+      <h1>Indice de Masa Corporal</h1><hr>
+      </center>
+      <center>
+      <table>
+<th>
+    <tr>
+        <td>Peso</td>
+        <td><input type="range" class="form-control text-center" onchange="cambio()" value="50" min="50" max="150" id="V" step="1"></td>
+        <td><h1 class="p-3" id="vp">50KG</h1></td>
+    </tr>
+</th>
+<tr>
+    <td>Altura</td>
+    <td><input type="range" class="form-control text-center" onchange="cambio()" value="1" min="2" max="150" id="VA" step="0.01"></td>
+    <td><h1  id="va">1 M</h1></td>
+</tr>
+      </table>
+      <div id="RE" class="p-4">
+        <h1 class="text-danger">No hay Resultado</h1>
+      </div>
+      </center>
+      <script src="../js/bootstrap.bundle.min.js"></script>  
+      <script src="app.js"></script>
+</body>
+</html>
